@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - SL Hygiene Food</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#15803d',
+                        secondary: '#d97706',
+                        dark: '#1c1917',
+                        light: '#fafaf9',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="bg-light text-dark font-sans antialiased">
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md shadow-sm transition-all duration-300" id="navbar">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-serif font-bold text-primary flex items-center gap-2">
+                <i class="fa-solid fa-leaf text-secondary"></i> SL Hygiene Food
+            </a>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="index.html"
+                    class="nav-link text-dark hover:text-primary font-medium transition-colors">Home</a>
+                <a href="products.html"
+                    class="nav-link text-dark hover:text-primary font-medium transition-colors">Products</a>
+                <a href="about.html" class="nav-link text-primary font-bold transition-colors">About Us</a>
+                <a href="contact.html"
+                    class="nav-link text-dark hover:text-primary font-medium transition-colors">Contact</a>
+                <a href="products.html"
+                    class="bg-primary text-white px-6 py-2 rounded-full hover:bg-green-800 transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5">Shop
+                    Now</a>
+            </div>
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="md:hidden text-2xl text-dark focus:outline-none">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu"
+            class="hidden md:hidden bg-white border-t border-gray-100 absolute w-full left-0 top-full shadow-lg">
+            <div class="flex flex-col p-6 space-y-4">
+                <a href="index.html" class="text-lg font-medium hover:text-primary">Home</a>
+                <a href="products.html" class="text-lg font-medium hover:text-primary">Products</a>
+                <a href="about.html" class="text-lg font-medium text-primary font-bold">About Us</a>
+                <a href="contact.html" class="text-lg font-medium hover:text-primary">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="bg-dark text-white py-24 relative overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&q=80"
+                alt="About Hero" class="w-full h-full object-cover opacity-30">
+        </div>
+        <div class="container mx-auto px-6 relative z-10 text-center">
+            <h1 class="text-4xl md:text-5xl font-serif font-bold mb-4 animate-fade-in-up">Our Purity Promise</h1>
+            <p class="text-xl max-w-2xl mx-auto text-gray-300 animate-fade-in-up" style="animation-delay: 0.1s;">
+                Dedicated to delivering the safest, most hygienic food products to your table.</p>
+        </div>
+    </header>
+
+    <!-- The Manufacturing Process -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2 animate-fade-in-up">
+                    <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80"
+                        alt="Hygienic Factory" class="rounded-2xl shadow-xl w-full">
+                </div>
+                <div class="md:w-1/2 animate-fade-in-up" style="animation-delay: 0.2s;">
+                    <span class="text-secondary font-semibold tracking-wider uppercase mb-2 block">Our Standard</span>
+                    <h2 class="text-3xl md:text-4xl font-serif font-bold text-dark mb-6">World-Class Hygiene Standards
+                    </h2>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        At SL Hygiene Food, we believe that good health begins with safe food. Our state-of-the-art
+                        manufacturing facility is designed to minimize human contact and maximize sterility. From raw
+                        material sorting to final packaging, every step is monitored by quality control experts.
+                    </p>
+                    <ul class="space-y-4">
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-check-circle text-primary text-xl"></i>
+                            <span class="text-dark font-medium">ISO 22000 Certified Facilities</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-check-circle text-primary text-xl"></i>
+                            <span class="text-dark font-medium">Automated, Touch-Free Packaging</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-check-circle text-primary text-xl"></i>
+                            <span class="text-dark font-medium">Food-Grade, Eco-Friendly Materials</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="py-20 bg-stone-100">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-serif font-bold text-dark">Core Values</h2>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-sm text-center">
+                    <div
+                        class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6 text-primary text-2xl">
+                        <i class="fa-solid fa-heart-pulse"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Health First</h3>
+                    <p class="text-gray-600">We never compromise on the nutritional value and safety of our products.
+                    </p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-sm text-center">
+                    <div
+                        class="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-6 text-secondary text-2xl">
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Quality Commitment</h3>
+                    <p class="text-gray-600">Only the finest ingredients make it into our packs. No fillers, no
+                        additives.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-sm text-center">
+                    <div
+                        class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6 text-blue-600 text-2xl">
+                        <i class="fa-solid fa-globe"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Sustainability</h3>
+                    <p class="text-gray-600">We reuse, recycle, and reduce waste in our manufacturing processes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white pt-20 pb-10">
+        <div class="container mx-auto px-6 text-center border-t border-white/10 pt-8 sm:pt-0">
+            <p class="text-sm text-gray-500">&copy; 2024 SL Hygiene Food. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
